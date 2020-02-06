@@ -13,6 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "aot": true,
             "outputPath": "dist/RecipeBook",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -54,6 +55,10 @@
                   "type": "initial",
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb"
                 }
               ]
             }
@@ -136,5 +141,8 @@
       }
     }
   },
-  "defaultProject": "RecipeBook"
+  "defaultProject": "RecipeBook",
+  "cli": {
+    "analytics": "2eb37bab-e73f-4509-a805-5320fa02c335"
+  }
 }
